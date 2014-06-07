@@ -1,0 +1,328 @@
+@charset "utf-8";
+/* 
+Width: 1000px
+# Columns : 12 
+Column width: 65px
+Gutter : 20px 
+
+target / context = result
+*/
+body {
+margin: 0;
+padding:0;
+overflow-x: hidden;
+position: relative;
+}
+
+.grid_1 {width: 6.5%; } /* 65px/1000px */
+.grid_2 {width: 15%; }/* 150px/1000px */
+.grid_3 {width: 23.5%; }/* 235px/1000px */
+.grid_4 {width: 32%; }/* 320px/1000px */
+.grid_5 {width: 40.5%; }/* 405px/1000px */
+.grid_6 {width: 49%; }/* 490px/1000px */
+.grid_7 {width: 57.5%; }/* 575px/1000px */
+.grid_8 {width: 66%; }/* 660px/1000px */
+.grid_9 {width: 74.5%; }/* 745px/1000px */
+.grid_10 {width: 83%; }/* 830px/1000px */
+.grid_11 {width: 91.5%; }/* 915px/1000px */
+.grid_12 {width: 100%; }/* 1000px/1000px */
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12 {
+margin: 0 2% 1% 0;
+float: left;
+display: block;
+color:#666;
+}
+
+html,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+ margin: 0;
+ padding: 0;
+ border: 0;
+ outline: 0;
+ font-size: 100%;
+ vertical-align: baseline;
+ background: transparent;
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+-webkit-appearance: button;
+cursor: pointer;
+}
+
+button {
+border: 0;
+background: none;
+color: #ffffff;
+font-family: "brandon-grotesque", sans-serif;
+font-size: 10px;
+font-weight: 300;
+outline: 0;
+padding: 0;
+text-transform: uppercase;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+display: block;
+}
+
+html, body, #site, #page {
+height: 100%;
+margin: 0px;
+padding: 0px;
+width: 100%;
+}
+
+section {
+height: 90%;
+position: relative;
+width: 100%;
+}
+
+.container {
+width: 920px;
+margin: 0 auto;
+}
+
+section[data-id="intro"] {
+background: #010001;
+color: #ffffff;
+height: 101%;
+overflow: hidden;
+text-align: center;
+position: relative;
+}
+
+section[data-id="intro"] .content {
+height: 250px;
+left: -12px;
+margin-top: -125px;
+position: absolute;
+top: 223px;
+width: 100%;
+z-index: 5;
+}
+
+section[data-id="intro"] .content .greetings h1 {
+background: url('') repeat-x center bottom;
+margin: 0px auto;
+padding-bottom: 60px;
+width: 554px;
+}
+
+section[data-id="intro"] .content .greetings h1 span {
+background: url('') no-repeat center bottom;
+background-size: contain;
+display: block;
+font-size: 170px;
+height: 121px;
+text-indent: -9999px;
+}
+
+section[data-id="intro"] .content .greetings h1 p {
+color: #9b9894;
+font-size: 16px;
+margin-top: 55px;
+text-transform: uppercase;
+}
+
+section[data-id="intro"] .stylist {
+background: url('http://themarklee.com/wp-content/uploads/2013/12/snowstorm.jpg') no-repeat center;
+height: 100%;
+width: 100%;
+position: absolute;
+z-index: 2;
+}
+
+section[data-id="intro"] button {
+bottom: 20px;
+margin-left: -38px;
+left: 50%;
+position: absolute;
+width: 76px;
+z-index: 150;
+}
+
+section[data-id="about"] {
+height: auto;
+padding-top: 220px;
+overflow: visible;
+position: relative;
+zoom: 1;
+}
+
+section[data-id="about"] article {
+margin: 0 0 180px 0;
+zoom: 1;
+}
+
+article.project {
+background-color: #fffff;
+color: #ffffff;
+height: 80%;
+overflow: hidden;
+position: relative;
+-webkit-transition:width 2s; /* For Safari 3.1 to 6.0 */
+transition:width 2s ease-in-out;
+}
+
+article.project:target {
+height:100%;
+position: absolute;
+}
+
+article.project > .content {
+/* display: none; */
+height: 240px;
+left: 0;
+margin-top: -120px;
+position: absolute;
+top: 50%;
+width: 100%;
+z-index: 20;
+}
+
+article.project .bg {
+background: no-repeat center center;
+background-size: cover;
+height: 110%;
+left: 0;
+overflow: hidden;
+position: absolute;
+top: 10%;
+width: 100%;
+z-index: 10;
+-webkit-transform: translate3d(0, 0, 0);
+-moz-transform: translate3d(0, 0, 0);
+transform: translate3d(0, 0, 0);
+}
+
+section[data-id="work"] {
+position: relative;
+height: 100%;
+}
+
+section[data-id="work"] .container {
+width: 100%;
+height: 100% !important;
+display:block;
+position: absolute;
+}
+
+section[data-id="contact"] {
+color: #ffffff;
+height: 100%;
+}
+
+section[data-id="contact"] .content {
+height: 250px;
+margin-left: -125px;
+position: absolute;
+top: 323px;
+width: 80%;
+z-index: 5;
+}
+
+section[data-id="contact"] .details {
+background: url('http://themarklee.com/wp-content/uploads/2013/12/snowstorm.jpg') no-repeat center;
+height: 100%;
+width: 100%;
+position: absolute;
+z-index: 2;
+}
+
+.bg a:hover{
+    background: #fff; color: #333;
+   -webkit-transition: background .5s, opacity .5s;
+-moz-transition: background .5s, opacity .5s;
+transition: background .5s, opacity .5s;
+    -webkit-transition-timing-function:ease;
+}
+
+.bg a{ 
+-webkit-transition-property: all;
+-webkit-transition: background .5s, opacity .5s;
+-moz-transition: background .5s, opacity .5s;
+transition: background .5s, opacity .5s;
+   -webkit-transition-timing-function:ease;
+}
+.full {
+width:100%;	
+}
+
+.first {
+width: 100%;
+height: 100% !important;
+position: absolute;
+display: none;
+}

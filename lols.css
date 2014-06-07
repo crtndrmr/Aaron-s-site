@@ -1,0 +1,131 @@
+* {
+margin: 0;
+padding: 0;
+-webkit-font-smoothing: antialiased;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+a:link { }
+
+body, html {
+height: 100%;
+width: 100%;
+}
+
+.flexslider {
+width: 100%;
+height: 100% !important;
+display:block;
+position: absolute;
+font-size: 18px;
+text-align: center;
+color: rgba(255,255,255,.6);
+text-shadow: 0 0 1px rgba(0,0,0,.05), 0 1px 2px rgba(0,0,0,.3);
+background: #5b4d3d;
+box-shadow: 0 1px 2px rgba(0,0,0,.25);
+}
+
+.flexslider .slides {
+height: 100% !important;
+width: 100%;
+left: 0;
+top: 0;
+position: absolute;
+}
+
+.flexslider .slides li  {
+background-repeat: no-repeat;
+background-position: center center;
+background-size: cover;
+height: 100% !important;
+width: 100%;
+display: none;
+/*	 -webkit-background-size: 100% 100%;*/
+-moz-background-size: 100% 100%;
+-o-background-size: 100% 100%;
+-ms-background-size: 100% 100%;
+/*	 background-size: 100% 100%;*/
+box-shadow: inset 0 -3px 6px rgba(0,0,0,.1);
+}
+
+.flexslider .flex-control-nav {
+   position: absolute;
+   width: 100%;
+   bottom: 20px;
+   text-align: center;
+   margin: 0 0 0 -10px;
+ 	z-index: 100 !important;
+
+}
+
+.flex-control-nav li {
+   display: inline-block;
+   zoom: 1;
+}
+
+.flex-control-paging li a {
+   display: block;
+   cursor: pointer;
+   text-indent: -9999px;
+   width: 12px;
+   height: 12px;
+   margin: 0 3px;
+   border: 2px solid #fff;
+border-radius: 6px;
+cursor: pointer;
+opacity: .4;
+-webkit-transition: background .5s, opacity .5s;
+-moz-transition: background .5s, opacity .5s;
+transition: background .5s, opacity .5s;
+}
+
+.flex-control-paging li a.flex-active {
+background: #fff;
+opacity: 1;
+}
+
+.flex-direction-nav a {
+   cursor: pointer;
+ 	color: #fff;
+ 	position: absolute;
+ 	top: 50%;
+ 	z-index: 100 !important;
+ 	font-size: 2em;
+ 	margin-top: -.75em;
+text-indent: -9999px;
+ 	opacity: .3;
+ 	user-select: none;
+ 	border-radius: 50%;
+ 	border: 1px solid #FFF;
+-webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+-webkit-transform: translate3d(0, 0, 0);
+-moz-transform: translate3d(0, 0, 0);
+transform: translate3d(0, 0, 0);
+}
+
+.flex-direction-nav .flex-next {
+background: url(http://www.antro.ca/img/svg/b_next.svg) no-repeat center;
+   margin-right:50px;
+right: 0;
+padding: 10px 5px 15px 10px;
+height: 76px;
+width: 76px;
+overflow: visible;
+}
+.flex-next:hover { border: 0px;}
+
+.flex-prev {
+background: url(http://www.antro.ca/img/svg/b_next.svg) no-repeat center;
+margin-left:50px;
+left: 0;
+padding: 10px 10px 15px 5px;
+height: 76px;
+width: 76px;
+overflow: visible;
+}
+.flex-prev:hover { border: 0px;}

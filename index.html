@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="lols.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="jquery.flexslider.js"></script>
+</head>
+
+<body>
+<div id="site">
+ <div id="page" class="main">
+<section class="section" data-id="intro">
+   	<div class="stylist"></div>
+   	<div class="container">
+       	<div class="content">
+           	<div class="greetings" style="opacity: 1; -webkit-transform: matrix(1, 0, 0, 1, 0, 0); display:block;">
+               	<h1>
+                   	<span>AbyA</span>
+                   </h1>
+                   <p>Freelance Stylist</p>
+               </div>
+           </div>
+       </div>
+       <button class="button" data-action="scroll" data-target="about">scroll</button>
+   </section>
+   <section class="section" data-id="about">
+       <div class="container">
+       	<article class="article">
+           	<div class="content">
+               	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc, quod agimus; Quis istud possit, inquit, negare? Ita prorsus, inquam; Tubulo putas dicere? Laboro autem non sine causa; Quorum altera prosunt, nocent altera.
+Cur post Tarentum ad Archytam? Maximus dolor, inquit, brevis est. Certe non potest. Non semper, inquam;
+Quamquam te quidem video minime esse deterritum. Cur haec eadem Democritus? Efficiens dici potest. Ne discipulum abducam, times. Qui-vere falsone, quaerere mittimus-dicitur oculis se privasse; Quis hoc dicit? Memini me adesse P.
+Sed nunc, quod agimus; Et quidem, inquit, vehementer errat; Non igitur bene. Tu quidem reddes;
+Quod totum contra est. Duo Reges: constructio interrete. Non est igitur voluptas bonum. Hoc mihi cum tuo fratre convenit. Disserendi artem nullam habuit. Ostendit pedes et pectus.</p>
+               </div>
+           </article>
+       </div>
+   </section>
+   <article class="project">
+   
+       <div class="bg full" style="-webkit-transform: translate3d(0px, -97.06136560069145px, 0px); background-image: url(http://www.antro.ca/img/projects/antro_fhstudio_bg.jpg);"></div>
+       
+       <div class="flexslider media" style="display:none">
+       <ul class="slides">
+        <li class="media" style="background-image: url(http://www.antro.ca/img/projects/antro_fhstudio_1.jpg);"></li>
+        <li class="media" style="background-image: url(http://themarklee.com/wp-content/uploads/2013/12/snowying.jpg);"></li>
+        <li class="media" style="background-image: url(http://themarklee.com/wp-content/uploads/2013/12/starlight.jpg);"></li>
+        <li class="media" style="background-image: url(http://themarklee.com/wp-content/uploads/2013/12/snowstorm.jpg);"></li>
+        <li class="media" style="background-image:url(http://themarklee.com/wp-content/uploads/2013/12/misty-winter-afternoon.jpg);"></li>
+       </ul>
+   </article>
+   <section class="section" data-id="work">
+    <div class="container">
+   	<div class="flexslider">
+       <ul class="slides">
+           <li style="background-image: url(http://www.antro.ca/img/projects/antro_fhstudio_1.jpg);"></li>
+           <li style="background-image: url(http://themarklee.com/wp-content/uploads/2013/12/snowying.jpg);"></li>
+           <li style="background-image: url(http://themarklee.com/wp-content/uploads/2013/12/starlight.jpg);"></li>
+           <li style="background-image: url(http://themarklee.com/wp-content/uploads/2013/12/snowstorm.jpg);"></li>
+           <li style="background-image: url(http://themarklee.com/wp-content/uploads/2013/12/misty-winter-afternoon.jpg);"></li>
+       </ul>
+   </div>
+   </section>
+   <section class="section" data-id="contact">
+   	<div class="details"></div>
+   	<div class="container">
+       	<div class="content">
+           	<p> Et quidem, inquit, vehementer errat; Non igitur bene. Tu quidem reddes;
+Quod totum contra est. Duo Reges: constructio interrete. Non est igitur voluptas bonum. Hoc mihi cum tuo fratre convenit. Disserendi artem nullam habuit. Ostendit pedes et pectus.</p>
+           </div>
+       </div>
+   </section>
+ </div>
+</div>
+
+<script>
+$('.full').click(function () {
+    $('.bg').fadeOut('fast',         function() {
+       $('.media').fadeIn('slow');
+     });
+});
+</script>
+
+<script>
+$('.slides').click(function () {
+    $('.media').fadeOut('fast',         function() {
+       $('.bg').fadeIn('slow');
+     });
+});
+</script>
+
+<script type="text/javascript" charset="utf-8">
+ $(window).load(function() {
+   $('.flexslider').flexslider({
+controlNav: true,
+directionNav: true,
+prevText: "Previous",
+nextText: "Next",
+});
+ });
+</script>
+</body>
+</html>
